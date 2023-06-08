@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Busca Endereço</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/busca-cep.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header text-center">
+                Buscar endereço pelo CEP
+            </div>
+            <div class="card-body">
+                <h4 class="card-text text-center">Digite o CEP para buscar o endereço.</h4>
+                <div class="container-body">
+                    <div class="form-row">
+                        <div class="col-md-3 mb-3">
+                            <label for="validationTooltip03">CEP:</label>
+                            <input class="form-control" id="cep" type="number" placeholder="somente números" name="cep" maxlength="8" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationTooltip04">Cidade:</label>
+                            <input class="form-control" id="cidade" type="text" name="cidade" readonly required>             
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationTooltip05">UF:</label>
+                            <input class="form-control" id="uf" type="text" name="endereco" readonly required>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <label for="inputAddress">Endereço:</label>
+                        <input class="form-control" id="endereco" type="text" name="endereco" readonly required>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-muted text-center">
+                <p class="lead">Aplicação que utiliza a API do site <a href="http://viacep.com.br/">viacep.com.br</a> que oferece um serviço para consulta de dados via json.</p>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>
